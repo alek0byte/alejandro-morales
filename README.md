@@ -1,10 +1,6 @@
 # Catálogo de servicios informáticos
 
-Sitio estático basado en **Dimension**, plantilla de HTML5 UP. El punto de entrada para GitHub Pages es `index.html`.
-
-## Publicación en GitHub Pages
-
-En el repositorio, abre **Settings → Pages** y selecciona **Deploy from a branch**, rama `main`, carpeta `/(root)`. Guarda los cambios. El archivo `.nojekyll` está incluido.
+Sitio estático basado en **Dimension**, plantilla de HTML5 UP.
 
 ## Estructura
 
