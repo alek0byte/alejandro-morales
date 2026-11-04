@@ -35,4 +35,12 @@ body, input, select, textarea { font-family: "Source Sans Pro", sans-serif; }
   .service b { display: block; text-align: left; margin-top: .4rem; white-space: normal; }
   .steps { grid-template-columns: 1fr; }
   #header nav ul li a { min-width: 0; }
+/* Fotografía de perfil */
+#header .logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+        }
 }
