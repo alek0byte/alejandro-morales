@@ -1,1 +1,38 @@
-/* Estilos del catálogo */
+/* Ajustes del catálogo sobre Dimension. */
+:root { --catalog-accent: #79d5c8; }
+body, input, select, textarea { font-family: "Source Sans Pro", sans-serif; }
+#header .content .inner { max-width: 48rem; }
+#header .logo { color: var(--catalog-accent); }
+#header .eyebrow { color: var(--catalog-accent); font-size: .72rem; letter-spacing: .22rem; font-weight: 600; margin-bottom: .6rem; }
+#header h1 { letter-spacing: .12rem; }
+#header .intro-note { opacity: .72; font-size: .9rem; }
+#header nav ul { max-width: 58rem; }
+#header nav ul li a { min-width: 8.5rem; }
+#main article { max-height: 78vh; }
+#main article h2.major { margin-bottom: 1.1rem; }
+#main article .section-lead { color: var(--catalog-accent); margin-top: -0.5rem; }
+#main article h3.subheading { margin-top: 2rem; }
+.service-list { display: grid; gap: .65rem; margin: 1.4rem 0; }
+.service { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; padding: .85rem 1rem; border: 1px solid rgba(255,255,255,.16); border-radius: 5px; background: rgba(255,255,255,.035); }
+.service p { margin: 0; flex: 1; }
+.service b { color: var(--catalog-accent); white-space: nowrap; text-align: right; font-weight: 600; }
+.price-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .8rem; margin-top: 1.5rem; }
+.price-card { padding: 1.2rem; border: 1px solid rgba(255,255,255,.18); border-radius: 5px; text-align: center; background: rgba(255,255,255,.04); }
+.price-card span, .price-card strong { display: block; }
+.price-card span { font-size: .9rem; opacity: .75; }
+.price-card strong { color: var(--catalog-accent); font-size: 1.45rem; margin-top: .25rem; }
+.condition-list { padding-left: 1.4rem; }
+.condition-list li { padding: .35rem 0 .55rem .25rem; }
+.steps { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .7rem; margin: 1.5rem 0; }
+.steps li { border: 1px solid rgba(255,255,255,.18); border-radius: 5px; padding: 1rem; display: flex; align-items: center; gap: .8rem; }
+.steps li span { color: var(--catalog-accent); font-size: 1.2rem; font-weight: 700; }
+.steps li strong { font-size: .78rem; letter-spacing: .06rem; }
+.note { border-left: 3px solid var(--catalog-accent); padding: .5rem 0 .5rem 1rem; opacity: .85; }
+#footer .copyright { margin-bottom: .25rem; }
+@media screen and (max-width: 736px) {
+  #main article { max-height: 82vh; }
+  .service { display: block; }
+  .service b { display: block; text-align: left; margin-top: .4rem; white-space: normal; }
+  .steps { grid-template-columns: 1fr; }
+  #header nav ul li a { min-width: 0; }
+}
