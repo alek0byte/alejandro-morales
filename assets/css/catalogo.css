@@ -53,3 +53,14 @@ body, input, select, textarea { font-family: "Source Sans Pro", sans-serif; }
     object-position: center 30%;
     border-radius: 50%;
 }
+/* Ajustes de títulos para móviles */
+@media screen and (max-width: 736px) {
+    #main article h2.major {
+        width: fit-content;
+        max-width: 100%;
+        white-space: normal;
+        letter-spacing: 0.12rem;
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+}
