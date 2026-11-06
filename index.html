@@ -193,5 +193,21 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const cta = document.querySelector(".whatsapp-cta");
+  const footer = document.querySelector("#footer");
+
+  if (!cta || !footer || !("IntersectionObserver" in window)) return;
+
+  const observer = new IntersectionObserver(function (entries) {
+    cta.classList.toggle("is-hidden", entries[0].isIntersecting);
+  }, {
+    threshold: 0.1
+  });
+
+  observer.observe(footer);
+});
+</script>
 </body>
 </html>
